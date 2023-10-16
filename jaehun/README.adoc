@@ -1,0 +1,132 @@
+= JSON
+
+* JavaScript Object Notation
+** name/value 쌍의 모음
+*** 객체, 레코드, 구조체 등
+** 정렬된 값 목록
+*** 배열, 벡터, 목록 또는 시퀀스
+
+
+== 구성요소
+Object::
+* 이름/값 쌍의 정렬되지 않는 집합.
+* { } 로 사용.
+
+ex) +
+{} +
+{"name" : "삼각형"} +
+{"name" : "삼각형", "내각" : [30, 60, 90]} +
+{"name" : "삼각형", "내각" : [30, 60, 90], "추가" : {"색" : "파랑"}}
+
+{empty}
+
+Array::
+* 정렬된 값의 모음
+* [ ] 로 사용.
+
+ex) +
+[1, 2, 3] +
+[1, "2", 3.0] +
+[1, "2", {"type" : "vlaue" } ] +
+[1, [10, [100, 101]]]
+
+{empty}
+
+Value::
+* "" 로 묶인 문자열
+* 숫자
+* true 또는 false
+* null
+* Object
+* 배열
+
+{empty}
+
+String::
+* \를 사용해서 "로 묶인 0개 이상의 유니코드 문자 시퀀스
+
+ex) +
+"\\\"\\\\\/\\b\\f\\n\\r\\t" +
+"\\u1234" +
+"abcd"
+
+{empty}
+
+Number::
+* 8진수 및 16진수 형식은 사용하지 않는다.
+
+Whitespace(공백)::
+* 모든 토큰 쌍 사이에 삽입 가능하다.
+
+json 모듈::
+[frame=ends, cols="1,4"]
+|===
+^s| Class
+^s| 설명
+
+| CDL
+| ,(쉼표)로 구분된 문자열을 JSONArray로 변환하거나 JSONArray를 ,로 구분되는 문자열로 변환한다.
+
+| Cookie
+| 웹 브라우저 쿠키 규격을 JSONObject로 변환하거나 JSONObject를 쿠키 규격으로 변환한다.
+
+| CookieList
+| 웹 브라우저 쿠키 목록 문자열을 JSONObject로 변환하거나 JSONObject를 쿠키 목록 문자열로 변환한다.
+
+| HTTP
+| HTTP 헤더를 JSONObject로 변환하거나 JSONObject를 HTTP 헤더로 변환한다.
+
+| JSONArray
+| 요소들이 순서대로 배열된 값.
+
+| JSONML
+| XML 텍스트를 JSONArray로 변환하거나 JSONArray를 XML 텍스트로 변환한다.
+
+| JSONObject
+| 이름/값 쌍의 정렬되지 않은 모둠이다.
+
+| JSONPointer
+| JSON 문서에 대해 정의된 간단한 쿼리 언어이다.
+
+| JSONPointer.Builder
+| 사용자가 각 단계에서 정확히 하나의 세그먼드를 사용하여 단계별로 JSONPointer를 작성할 수 있도록 한다.
+
+| JSONString
+| ??
+
+| JSONTokener
+| 문자열을 가져와 문자 및 토큰을 추출한다.
+
+| HTTPTokener
+| JSONTokener를 확장하여 HTTP 헤더의 구문 분석을 위한 방법을 제공한다.
+
+| XMLTokener
+| JSONTokener를 확장하여 XML 텍스트의 구문 분석을 위한 방법을 제공한다
+
+| JSONWriter
+| JSON 텍스트를 빠르고 편리하게 생성하는 방법을 제공한다.
+
+| JSONStringer
+| JSON 텍스트를 빠르고 편리하게 생성하는 방법을 제공한다.
+
+| JSONException
+| 상황이 잘못될 때 JSON.org 클래스에 의해 던져진다.
+
+| JSONPointerException
+| JSON Pointer를 평하가는 동안 오류가 발생하면 Pointer가 예외를 발생시킨다.
+
+| Property
+| 속성 파일 데이터를 JSONObject로 변환하거나 JSONObject를 속성 파일 데이터로 변환한다.
+
+| XML
+| XML 문자열을 JSONObject로 변환하거나 JSONObject를 XML 문자열로 변환한다.
+|===
+
+JSONObject::
+[source, java]
+----
+public class JSONObject extends Object
+----
+* 이름/값 쌍의 정렬되지 않은 컬렉션이다.
+* boolean, JSONArray, JSONObject, Number, String, JSONObject.NULL
+
