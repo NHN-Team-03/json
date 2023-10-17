@@ -6,6 +6,12 @@ public class Equipment {
     private int attackPower;
     private int defencePower;
 
+    public Equipment(String model, int attackPower, int defencePower) {
+        this.model = model;
+        this.attackPower = attackPower;
+        this.defencePower = defencePower;
+    }
+
     public String getModel() {
         return model;
     }
