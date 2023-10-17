@@ -1,4 +1,4 @@
-package com.nhnacademy.json.exercise;
+package com.nhnacademy.json.collab;
 
 public class Record {
 
@@ -9,7 +9,6 @@ public class Record {
         this.numberOfMatches = numberOfMatches;
         this.numberOfWins = numberOfWins;
     }
-
 
     public int getNumberOfMatches() {
         return numberOfMatches;
