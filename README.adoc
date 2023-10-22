@@ -1,4 +1,15 @@
 = json
 
 == 📚
-교재 : https://nhnacademy.dooray.com/share/pages/8QYXdm02Tl-ADAq-z7R3tA[NHN Dooray] 
+교재 : https://nhnacademy.dooray.com/share/pages/8QYXdm02Tl-ADAq-z7R3tA[NHN Dooray] +
+교재 : https://github.com/nhnacademy-bootcamp/json
+
+=== 🐵 MEMBER
+[cols="1,1,1,1,1"]
+|===
+|link:jaehun[장재훈]
+|link:seungjo[정승조]
+|link:damho[이담호]
+|link:jeongwoo[이정우]
+|link:yongjun[유용준]
+|===
