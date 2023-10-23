@@ -2,7 +2,7 @@
 
 == 📚
 교재 : https://nhnacademy.dooray.com/share/pages/8QYXdm02Tl-ADAq-z7R3tA[NHN Dooray] +
-교재 : https://github.com/nhnacademy-bootcamp/json
+교재 : https://github.com/nhnacademy-bootcamp/json[Git Hub]
 
 === 🐵 MEMBER
 [cols="1,1,1,1,1"]
